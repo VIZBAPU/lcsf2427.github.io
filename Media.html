@@ -2,14 +2,14 @@
 <!-- 
     Name: Vishwadeepsinh Vanrajsinh Vaghela
     Student Number: C0951658
-    Page: Home Page
+    Page: Media Page
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerPro Tools - Home</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <title>PowerPro Tools - Media</title>
+    <link rel="stylesheet" href="Styles/media.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -33,23 +33,47 @@
                 <a href="contact.html" class="nav-link">Contact Us</a>
             </div>
         </nav>
-        <div class="banner">
-            <img src="images/banner.webp" alt="PowerPro Tools Banner" style="width: 100%; height: auto;">
-        </div>
     </header>
 
     <!-- Main Section -->
     <main class="container">
-        <h1>Welcome to PowerPro Tools</h1>
-        <p>Your one-stop shop for the best electric drills and power tools in the industry!</p>
-        <img src="images/welcome_image.webp" alt="Friendly Welcome Image" style="width: 100%; max-width: 500px; margin: 20px auto;">
+        <h1>PowerPro Tools Media</h1>
+
+        <!-- Audio Component -->
+        <section>
+            <h2>Podcast: How to Use a Drill, Beginner's Guide</h2>
+            <audio controls>
+                <source src="media/how-to-use-a-drill-beginners-guide.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Listen to this beginner's guide podcast to learn how to use a drill effectively, including safety tips and practical advice for first-time users.</p>
+        </section>
+
+        <section>
+            <h2>Video: Cordless Drill vs. Impact Driver</h2>
+            <video controls width="100%" style="max-width: 800px;">
+                <source src="media/cordless-drill-vs-impact-driver.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>This video compares the functionality, efficiency, and key differences between a cordless drill and an impact driver. Learn which tool suits your needs the best!</p>
+        </section>
+
+        <!-- Creative Add-on -->
+        <section class="media-gallery">
+            <h2>Media Highlights</h2>
+            <p>Explore photos and videos from our recent projects and events.</p>
+            <div class="gallery">
+                <img src="images/media1.PNG" alt="Project 1">
+                <img src="images/media2.PNG" alt="Event 1">
+                <img src="images/media3.PNG" alt="Workshop">
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; Copyright 2099. All Rights Reserved.</p>
         <p><a href="mailto:info@powerprotools.com">Request information</a></p>
-        <p>Vishwadeepsinh Vanrajsinh Vaghela &nbsp; &nbsp; C0951658</p>
     </footer>
 
     <!-- JavaScript for Responsive Navigation -->
