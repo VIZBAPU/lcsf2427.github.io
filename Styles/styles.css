@@ -114,6 +114,30 @@ main img {
     height: auto;
 }
 
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    color: #444;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.faq a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
 /* Footer Section */
 footer {
     text-align: center;

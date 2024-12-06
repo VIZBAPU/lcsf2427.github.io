@@ -64,6 +64,16 @@ nav img {
     gap: 20px; /* Adds spacing between nav links */
 }
 
+.nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ff9900;
+}
+
 #navLinks a {
     color: white;
     text-decoration: none;
@@ -86,6 +96,7 @@ nav img {
 
 /* Main Section */
 main {
+    text-align: center;
     padding: 20px;
     background-color: white;
     margin: 20px auto;
@@ -95,9 +106,9 @@ main {
 }
 
 main h1 {
+    text-align: center;
     color: #333;
-    font-size: 2.5em; /* Adjusting heading size */
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 main p {
@@ -105,87 +116,53 @@ main p {
     color: #666;
 }
 
-/* General Form Styles */
-form {
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+main img {
+    margin-top: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 500px;
+    height: auto;
 }
 
-fieldset {
-    border: 2px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
+.media-section {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-legend {
-    font-size: 1.3em;
-    font-weight: bold;
+.media-section h2 {
     color: #444;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-ol {
-    list-style-type: decimal;
-    margin: 0;
-    padding-left: 20px;
-}
-
-li {
+.media-section p {
+    color: #555;
     margin-bottom: 15px;
 }
 
-label {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
-    margin-left: 15px;
+audio, video {
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-textarea,
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-textarea {
-    resize: vertical;
+.gallery img {
+    width: 30%;
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-button {
-    background-color: #444;
-    color: white;
-    font-size: 1.1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 10px 20px 0px 175px;
-}
-
-button:hover {
-    background-color: #ff9900;
-}
-
-button[type="reset"] {
-    background-color: #999;
-}
-
-button[type="reset"]:hover {
-    background-color: #ccc;
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 /* Footer Section */
@@ -250,6 +227,14 @@ footer a:hover {
 
     main p {
         font-size: 1em;
+    }
+
+    .gallery img {
+        width: 45%;
+    }
+
+    audio, video {
+        width: 100%;
     }
 }
 
