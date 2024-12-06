@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Vishwadeepsinh Vanrajsinh Vaghela
+    Student Number: C0951658
+    Page: About Us Page
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPro Tools - About Us</title>
+    <link rel="stylesheet" href="Styles/about.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.PNG" alt="PowerPro Tools Logo" style="height: 80px; width: auto;">
+                </a>
+            </div>
+            <div id="menuIcon" class="hamburger-menu">&#9776;</div>
+            <div id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="specials.html" class="nav-link">Specials</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="media.html" class="nav-link">Media</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="about-section">
+            <h1>About PowerPro Tools</h1>
+            <p>At PowerPro Tools, we specialize in providing top-quality power tools and accessories to professionals and DIY enthusiasts alike. With over a decade of experience, we are your trusted source for durable, efficient, and innovative tools that get the job done right.</p>
+        </section>
+
+        <section class="story-section">
+            <h2>Our Story</h2>
+            <p>Founded in 2009, PowerPro Tools began with a simple goal: to provide reliable power tools to our community. From humble beginnings as a small family-run store, we have grown into a national leader in the industry, serving thousands of satisfied customers each year.</p>
+        </section>
+
+        <section class="reasons-section">
+            <h2>Six Reasons Why You Should Shop With Us</h2>
+            <ol>
+                <li>Top-notch customer service.</li>
+                <li>Extensive product range.</li>
+                <li>Affordable prices with great deals.</li>
+                <li>Fast and reliable delivery.</li>
+                <li>Quality assurance on every product.</li>
+                <li>Exclusive loyalty program for returning customers.</li>
+            </ol>
+        </section>
+
+        <section class="guarantee-section">
+            <h2>Our Guarantee</h2>
+            <p>Your satisfaction is our priority. If you're not completely happy with your purchase, we will make it right. <strong>We guarantee the best shopping experience or your money back!</strong></p>
+        </section> 
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@powerprotools.com">Request information</a></p>
+        <p>Vishwadeepsinh Vanrajsinh Vaghela &nbsp; &nbsp; C0951658</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const navLinks = document.getElementById('navLinks');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

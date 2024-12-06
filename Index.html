@@ -2,41 +2,63 @@
 <!-- 
     Name: Vishwadeepsinh Vanrajsinh Vaghela
     Student Number: C0951658
+    Page: Home Page
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerPro Tools - Home</title>
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <img src="images/PowerPro Logo.jpg" alt="PowerPro Tools Banner" width="100%" height="200px">
         <nav>
-            <a href="index.html">
-                <img src="logo.png" alt="PowerPro Tools Logo" style="height: 50px;">
-            </a>
-            <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp;
-            <a href="team.html">Our Team</a> &nbsp; &nbsp;
-            <a href="specials.html">Specials</a> &nbsp; &nbsp;
-            <a href="training.html">Training</a> &nbsp; &nbsp;
-            <a href="media.html">Media</a> &nbsp; &nbsp;
-            <a href="faqs.html">FAQs</a> &nbsp; &nbsp;
-            <a href="contact.html">Contact Us</a>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.PNG" alt="PowerPro Tools Logo" style="height: 80px; width: auto;">
+                </a>
+            </div>
+            <div id="menuIcon" class="hamburger-menu">&#9776;</div>
+            <div id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="specials.html" class="nav-link">Specials</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="media.html" class="nav-link">Media</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
         </nav>
+        <div class="banner">
+            <img src="images/banner.webp" alt="PowerPro Tools Banner" style="width: 100%; height: auto;">
+        </div>
     </header>
 
-    <main>
+    <!-- Main Section -->
+    <main class="container">
         <h1>Welcome to PowerPro Tools</h1>
         <p>Your one-stop shop for the best electric drills and power tools in the industry!</p>
-        <img src="welcome_image.jpg" alt="Friendly Welcome Image" style="width: 100%; max-width: 500px;">
+        <img src="images/welcome_image.webp" alt="Friendly Welcome Image" style="width: 100%; max-width: 500px; margin: 20px auto;">
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        &copy; Copyright 2099. All Rights Reserved.<br>
-        <a href="mailto:info@powerprotools.com">Request information</a><br>
-        Vishwadeepsinh Vanrajsinh Vaghela &nbsp; &nbsp; C0951658
+        <p>&copy; Copyright 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@powerprotools.com">Request information</a></p>
+        <p>Vishwadeepsinh Vanrajsinh Vaghela &nbsp; &nbsp; C0951658</p>
     </footer>
+
+    <!-- JavaScript for Responsive Navigation -->
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const navLinks = document.getElementById('navLinks');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
