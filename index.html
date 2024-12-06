@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Vishwadeepsinh Vanrajsinh Vaghela
+    Student Number: C0951658
+    Page: Home Page
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPro Tools - Home</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.PNG" alt="PowerPro Tools Logo" style="height: 80px; width: auto;">
+                </a>
+            </div>
+            <div id="menuIcon" class="hamburger-menu">&#9776;</div>
+            <div id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="specials.html" class="nav-link">Specials</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="media.html" class="nav-link">Media</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="images/banner.webp" alt="PowerPro Tools Banner" style="width: 100%; height: auto;">
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+        <h1>Welcome to PowerPro Tools</h1>
+        <p>Your one-stop shop for the best electric drills and power tools in the industry!</p>
+        <img src="images/welcome_image.webp" alt="Friendly Welcome Image" style="width: 100%; max-width: 500px; margin: 20px auto;">
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Copyright 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@powerprotools.com">Request information</a></p>
+        <p>Vishwadeepsinh Vanrajsinh Vaghela &nbsp; &nbsp; C0951658</p>
+    </footer>
+
+    <!-- JavaScript for Responsive Navigation -->
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const navLinks = document.getElementById('navLinks');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

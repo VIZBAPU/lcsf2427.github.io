@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Vishwadeepsinh Vanrajsinh Vaghela
+    Student Number: C0951658
+    Page: Media Page
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerPro Tools - Media</title>
+    <link rel="stylesheet" href="Styles/media.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Logo.PNG" alt="PowerPro Tools Logo" style="height: 80px; width: auto;">
+                </a>
+            </div>
+            <div id="menuIcon" class="hamburger-menu">&#9776;</div>
+            <div id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="team.html" class="nav-link">Our Team</a>
+                <a href="specials.html" class="nav-link">Specials</a>
+                <a href="training.html" class="nav-link">Training</a>
+                <a href="media.html" class="nav-link">Media</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container">
+        <h1>PowerPro Tools Media</h1>
+
+        <!-- Audio Component -->
+        <section>
+            <h2>Podcast: How to Use a Drill, Beginner's Guide</h2>
+            <audio controls>
+                <source src="media/how-to-use-a-drill-beginners-guide.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Listen to this beginner's guide podcast to learn how to use a drill effectively, including safety tips and practical advice for first-time users.</p>
+        </section>
+
+        <section>
+            <h2>Video: Cordless Drill vs. Impact Driver</h2>
+            <video controls style="width: 100%; max-width: 800px;">
+                <source src="videos/cordless-drill-vs-impact-driver.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>            
+            <p>This video compares the functionality, efficiency, and key differences between a cordless drill and an impact driver. Learn which tool suits your needs the best!</p>
+        </section>
+
+        <!-- Creative Add-on -->
+        <section class="media-gallery">
+            <h2>Media Highlights</h2>
+            <p>Explore photos and videos from our recent projects and events.</p>
+            <div class="gallery">
+                <img src="images/media1.PNG" alt="Project 1">
+                <img src="images/media2.PNG" alt="Event 1">
+                <img src="images/media3.PNG" alt="Workshop">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Copyright 2099. All Rights Reserved.</p>
+        <p><a href="mailto:info@powerprotools.com">Request information</a></p>
+    </footer>
+
+    <!-- JavaScript for Responsive Navigation -->
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const navLinks = document.getElementById('navLinks');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
